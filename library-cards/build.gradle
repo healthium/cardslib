@@ -9,8 +9,8 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 27
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
@@ -23,10 +23,7 @@ android {
 
 dependencies {
     // Cards Library
-    compile project(':library-core')
-
-    //Annotation
-    compile 'com.android.support:support-annotations:27.1.0'
+    api project(':library-core')
 }
 
 // Used to update in Maven

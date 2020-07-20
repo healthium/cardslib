@@ -11,8 +11,10 @@ buildscript {
 }
 
 ext {
-    compileSdkVersion = 27
-    buildToolsVersion = "27.0.2"
+    compileSdkVersion = 29
+    buildToolsVersion = "29.0.3"
+    targetSdkVersion = 29
+    minSdkVersion = 16
 }
 
 def isReleaseBuild() {
