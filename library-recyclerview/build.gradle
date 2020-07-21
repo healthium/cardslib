@@ -1,8 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
-repositories {
-    jcenter()
-}
+group='com.github.healthium'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -14,12 +13,6 @@ android {
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
-
-    // This is important, it will run lint checks but won't abort build
-    lintOptions {
-        abortOnError false
-    }
-    buildToolsVersion '26.0.3'
 }
 
 dependencies {
