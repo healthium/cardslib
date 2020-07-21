@@ -16,7 +16,7 @@
   ~  *****************************************************************************
   -->
 
-<android.support.v7.widget.Toolbar
+<androidx.appcompat.widget.Toolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/HeaderBar"
@@ -30,4 +30,4 @@
 
     <include layout="@layout/demo_barheader_full_include"></include>
 
-</android.support.v7.widget.Toolbar>
+</androidx.appcompat.widget.Toolbar>

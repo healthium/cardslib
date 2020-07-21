@@ -29,7 +29,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.LayoutRes;
+import androidx.annotation.LayoutRes;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -37,6 +37,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
+
+import androidx.cardview.widget.CardView;
 
 import java.util.HashMap;
 
@@ -106,7 +108,7 @@ import it.gmariotti.cardslib.library.view.listener.SwipeDismissViewTouchListener
 * </p>
 * @author Gabriele Mariotti (gabri.mariotti@gmail.com)
 */
-public class CardViewNative extends android.support.v7.widget.CardView implements CardViewWrapper {
+public class CardViewNative extends CardView implements CardViewWrapper {
 
     protected static String TAG = "CardViewNative";
 
